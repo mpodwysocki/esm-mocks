@@ -1,0 +1,32 @@
+{
+  "name": "esmock-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist-esm/index.mjs",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"*.{js,json}\"",
+    "lint:fix": "eslint README.md package.json src test --ext .ts,.javascript,.js --fix --fix-type [problem,suggestion]",
+    "lint": "eslint README.md package.json src test --ext .ts,.javascript,.js",
+    "test": "mocha test/**/*.ts"
+  },
+  "keywords": [],
+  "author": "Matthew Podwysocki",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.44.0",
+    "esm": "^3.2.25",
+    "mocha": "^10.2.0",
+    "node-fetch": "^3.3.1",
+    "prettier": "^3.0.0",
+    "testdouble": "^3.18.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
